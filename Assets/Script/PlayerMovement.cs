@@ -110,4 +110,9 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Idle() { }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        GameManager.health -= 1;
+    }
+
 }
